@@ -186,7 +186,7 @@ func printTypes(sb *strings.Builder, types []introspectionTypeDefinition, withou
 
 func printDescription(sb *strings.Builder, description string) {
 	if description != "" {
-		sb.WriteString(fmt.Sprintf(`"""%s"""`, description))
+		sb.WriteString(fmt.Sprintf(`"""\n%s\n"""`, description))
 		sb.WriteString("\n")
 	}
 }
